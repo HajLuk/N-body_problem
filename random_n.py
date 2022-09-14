@@ -66,9 +66,9 @@ if __name__ == '__main__':
         g = random.random()
         b = random.random()
         plt.plot(coordinates_x[:, body], coordinates_y[:, body], "-",
-                 color=(r, g, b), label="body #" + str(body))
-        plt.plot(coordinates_x[time_steps-1, body], coordinates_y[time_steps-1, body], "o",
                  color=(r, g, b))
+        plt.plot(coordinates_x[time_steps-1, body], coordinates_y[time_steps-1, body], "-o",
+                 color=(r, g, b), label="body #" + str(body))
     # Labels
     plt.legend()
     plt.xlabel('x (metres)')
